@@ -1,0 +1,141 @@
+.pricing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(http://csmthemes.com/themes/launch/image/img/bg-pricing.jpg) center
+      center no-repeat scroll;
+  background-size: auto;
+  background-size: cover;
+  position: relative;
+}
+section,
+header {
+  display: block;
+}
+
+.section-header {
+  margin-bottom: 3em;
+}
+
+.pricing_h2 {
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.pricing_h3 {
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.section_p {
+  background-color: #f56363;
+}
+.section_p p {
+  color: #fff;
+  margin: 0.75em 0 0;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 0;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.section-header h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.bttn {
+  background-color: #fff;
+  color: #f56363;
+  border: 1px solid transparent;
+  padding: 1em 3em;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+  border-radius: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.bttn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+.section_p a[href^="tel"] {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.section_p a[href^="tel"]:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* <---------------------------------   Media Query Start ----------------------------------> */
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .section-header h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .section-header h2 {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-header h2 {
+    font-size: 46px;
+  }
+  .section-header h3 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-header h2 {
+    font-size: 46px;
+  }
+}

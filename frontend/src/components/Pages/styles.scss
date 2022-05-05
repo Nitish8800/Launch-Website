@@ -1,0 +1,121 @@
+.left_side_form {
+  padding: 4rem;
+
+  background-color: white;
+
+  z-index: 1;
+}
+
+.right__side__form {
+  background: url("https://storage.googleapis.com/theme-vessel-items/checking-sites/oddo-2-html/HTML/main/assets/img/img-21.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo_form {
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  img {
+    width: 4rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.change_page_div {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading__title {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  h1 {
+    font-size: 1.2rem;
+
+    font-weight: 400;
+    color: #040404;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+
+.input__box {
+  input {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    color: #535353;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    padding: 0.8rem 3rem 0.8rem 1.2rem;
+  }
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_submit {
+  button {
+    background: #15d0ad;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    width: 100%;
+    padding: 0.8rem 0rem;
+  }
+}
+
+.reginter_another_page {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__containers {
+  button {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: -1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (max-width: 870px) {
+  .right__side__form {
+    display: none;
+  }
+}

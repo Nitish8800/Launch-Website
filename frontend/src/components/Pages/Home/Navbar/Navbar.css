@@ -1,0 +1,38 @@
+.download-btn {
+  background-color: #fff;
+  color: #f56363;
+  margin: 10px;
+}
+.download-btn:hover {
+  border: 1px solid #f56363;
+  background-color: transparent;
+  color: #f56363;
+  transition: 0.4s ease-in-out;
+}
+
+#components-layout-demo-fixed .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: #fff;
+  max-width: 100%;
+  height: auto;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.navbar-nav li::before {
+  color: transparent;
+  text-decoration: none;
+}
+.pull-left {
+  float: left;
+  padding-bottom: 2.5%;
+  margin-right: 40px;
+}

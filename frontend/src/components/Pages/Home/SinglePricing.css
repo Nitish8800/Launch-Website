@@ -1,0 +1,111 @@
+.plan {
+  background-color: #fff;
+  width: 350px;
+  display: inline-block;
+  margin: 0 0 1.5em;
+  max-width: 100%;
+}
+.buy-button {
+  padding-bottom: 1.5em;
+}
+
+.plan .header,
+.price,
+.plan-features {
+  padding: 1.5em 1em;
+}
+
+.plan .header h4 {
+  font-size: 21px;
+  margin: 0;
+  font-weight: 600;
+  color: #4c4c4c;
+  font-family: inherit;
+  line-height: 1.1;
+}
+
+.price {
+  background-color: #43c5b8;
+  color: #fff;
+}
+
+.currency {
+  font-size: 30px;
+  vertical-align: top;
+  top: 30px;
+}
+
+.price-amount {
+  font-size: 110px;
+  line-height: 1;
+}
+
+.period {
+  font-size: 30px;
+}
+
+.plan-features li {
+  padding-bottom: 0.75em;
+  font-size: 17px;
+}
+
+.btn {
+  padding: 1em 3em;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f56363;
+  line-height: 1.5;
+  border: none;
+  border-radius: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.buy-button p {
+  margin: 12px 0 0;
+  font-weight: 300;
+  color: #4c4c4c;
+  font-size: 17px;
+}
+
+.plan:last-child {
+  margin-bottom: 0;
+}
+
+.plan-features li::before {
+  color: transparent;
+  text-decoration: none;
+}
+
+/* <---------------------------------   Media Query Start ----------------------------------> */
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .plan {
+    width: 325px;
+    margin: 0 1em 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan {
+    margin: 0 1.5em 0;
+    width: 350px;
+  }
+}
