@@ -16,5 +16,12 @@
 # Reviews Page : 
 ![image](https://user-images.githubusercontent.com/81190422/166916874-f6ec9fa1-639d-4b61-8c19-0cbcd194356c.png)
 
+#Pricing Page : 
+![image](https://user-images.githubusercontent.com/81190422/166917524-e1e33a08-a960-4b8e-98e5-cfbdefc9501d.png)
 
+# Teams page : 
+![image](https://user-images.githubusercontent.com/81190422/166917691-e2ed496a-0b8f-41d5-a4ad-4972d3f08787.png)
+
+# Contact Us & Footer : 
+![image](https://user-images.githubusercontent.com/81190422/166917794-2d72e763-e487-4bd3-9ee2-2c37fb2c774c.png)
 
