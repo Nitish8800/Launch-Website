@@ -38,7 +38,10 @@ export const Home = () => {
         },
       });
       const data = await response.json();
-      dispatch(set_user_data(data));
+      if ((data.message = "jwt malformed")) {
+      } else {
+        dispatch(set_user_data(data));
+      }
     } catch (err) {
       toast.error(err);
     }

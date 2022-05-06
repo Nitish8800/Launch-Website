@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import MobileNav from "./MobileNav";
 import "./Navbar.css";
+import { useSelector } from "react-redux";
 import LoginIcon from "@mui/icons-material/Login";
 
 const NavSec = styled.nav`
@@ -36,8 +37,7 @@ const NavElement = styled.span`
 `;
 
 export const Header = () => {
-
-const { userdata } = useSelector((state) => state);
+  const { userdata } = useSelector((state) => state);
 
   return (
     <NavSec>
@@ -95,19 +95,12 @@ const { userdata } = useSelector((state) => state);
                     <NavElement> Contact</NavElement>
                   </a>
                 </li>
-                <li className="nav-item pull-left">
-                  <a href="/" className="nav-link active">
-                    <NavElement>
-                      <LoginIcon style={{ marginRight: "5px" }} />
-                      {/* Login */}
-                      {userdata.isAdmin ? "student" : "Admin"}
-                    </NavElement>
-                  </a>
-                </li>
 
                 <li className="nav-item pad">
-                  <a href="/login" target="_blank" className="btn download-btn">
-                    JOIN US
+                  <a href="#" className="btn download-btn">
+                    <b style={{ textTransform: "uppercase" }}>
+                      {userdata && userdata.isAdmin ? "student" : "Admin"}
+                    </b>
                   </a>
                 </li>
               </ul>

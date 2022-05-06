@@ -13,17 +13,6 @@ export default function VideoTour() {
             href="https://player.vimeo.com/video/109054393?h=853aa52fde"
             className="play litebox-tour"
           > */}
-          {isOpen && (
-            <div className="cont" onClick={() => setIsOpne(false)}>
-              <div className="popup">
-                <iframe
-                  width="750px"
-                  height="425px"
-                  src="https://player.vimeo.com/video/225434434?"
-                ></iframe>
-              </div>
-            </div>
-          )}
           <img
             onClick={() => setIsOpne(!isOpen)}
             src="http://csmthemes.com/themes/launch/image/img/play-btn-vs.png"
@@ -32,6 +21,17 @@ export default function VideoTour() {
           {/* </a> */}
           <h2>Video Preview Of Product</h2>
         </div>
+        {isOpen && (
+          <div className="cont" onClick={() => setIsOpne(false)}>
+            <div className="popup">
+              <iframe
+                width="750px"
+                height="425px"
+                src="https://player.vimeo.com/video/225434434?"
+              ></iframe>
+            </div>
+          </div>
+        )}
 
         <video
           id="bgvid"

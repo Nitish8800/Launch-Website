@@ -40,7 +40,7 @@
 
 .video-tour .play-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   left: 50%;
   top: 50%;
   bottom: auto;
