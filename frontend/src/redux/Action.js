@@ -1,4 +1,5 @@
 import {
+  LOGOUT,
   SET_INPUT_LOGIN_PASSWORD,
   SET_INPUT_VALUE,
   SET_TOKEN,
@@ -38,5 +39,11 @@ export const set_user_data = (user) => {
   return {
     type: USER_DATA,
     payload: user,
+  };
+};
+
+export const logout = () => {
+  return {
+    type: LOGOUT,
   };
 };

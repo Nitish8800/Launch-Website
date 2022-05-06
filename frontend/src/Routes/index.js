@@ -5,7 +5,7 @@ import { Home } from "../components/Pages/Home/Home";
 
 import { Login } from "../components/Pages/Login";
 import { Register } from "../components/Pages/Register";
-import { Set_token_status } from "../redux/Action";
+import { set_Token, Set_token_status } from "../redux/Action";
 // import { TestingComponent } from "../Test";
 
 export const Routes = () => {
@@ -16,6 +16,7 @@ export const Routes = () => {
   useEffect(() => {
     if (localStorage.getItem("token")) {
       dispatch(Set_token_status(true));
+      dispatch(set_Token(localStorage.getItem("token")));
     }
   }, []);
   return (

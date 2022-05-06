@@ -33,6 +33,6 @@ a {
 }
 .pull-left {
   float: left;
-  padding-bottom: 2.5%;
-  margin-right: 40px;
+  margin: 5px;
+  
 }

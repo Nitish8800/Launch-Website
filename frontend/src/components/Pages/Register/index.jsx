@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { Register_Form } from "./partials/Register_form";
 
@@ -9,6 +10,11 @@ const Register__container = styled.div`
 `;
 
 export const Register = () => {
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      window.location.href = "/";
+    }
+  }, []);
   return (
     <>
       <Register__container>

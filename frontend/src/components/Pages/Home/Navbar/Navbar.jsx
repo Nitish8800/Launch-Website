@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import MobileNav from "./MobileNav";
 import "./Navbar.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import LoginIcon from "@mui/icons-material/Login";
+import { logout } from "../../../../redux/Action";
 
 const NavSec = styled.nav`
   background-color: #fff;
@@ -38,6 +39,15 @@ const NavElement = styled.span`
 
 export const Header = () => {
   const { userdata } = useSelector((state) => state);
+  const dispatch = useDispatch();
+  // console.log("userdata:", userdata.isAdmin);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    dispatch(logout());
+
+    window.location.reload();
+  };
 
   return (
     <NavSec>
@@ -99,9 +109,16 @@ export const Header = () => {
                 <li className="nav-item pad">
                   <a href="#" className="btn download-btn">
                     <b style={{ textTransform: "uppercase" }}>
-                      {userdata && userdata.isAdmin ? "student" : "Admin"}
+                      {userdata && userdata.isAdmin ? "admin" : "student"}
                     </b>
                   </a>
+                </li>
+                <li className="nav-item pad">
+                  <button onClick={() => handleLogout()}>
+                    {" "}
+                    <LoginIcon style={{ marginRight: "5px" }} />
+                    logout
+                  </button>
                 </li>
               </ul>
             </div>

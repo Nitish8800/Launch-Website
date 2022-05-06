@@ -47,7 +47,7 @@ export const Register_Form = () => {
             name,
             email,
             password,
-            admin: select,
+            isAdmin: select,
           }),
         });
         const data = await response.json();

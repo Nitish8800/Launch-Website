@@ -8,17 +8,12 @@ export default function VideoTour() {
     <>
       <section className="video-tour text-center">
         <div className="play-btn">
-          {" "}
-          {/* <a
-            href="https://player.vimeo.com/video/109054393?h=853aa52fde"
-            className="play litebox-tour"
-          > */}
           <img
             onClick={() => setIsOpne(!isOpen)}
             src="http://csmthemes.com/themes/launch/image/img/play-btn-vs.png"
             alt="play"
           />
-          {/* </a> */}
+
           <h2>Video Preview Of Product</h2>
         </div>
         {isOpen && (
@@ -37,8 +32,8 @@ export default function VideoTour() {
           id="bgvid"
           poster="http://csmthemes.com/themes/launch/image/img/bg-video-preview.jpg"
         >
-          <source src="https://vimeo.com/103007490" type="video/mp4" />
-          <source src="https://vimeo.com/103007490" type="video/webm" />
+          {/* <source src="https://vimeo.com/103007490" type="video/mp4" /> */}
+          {/* <source src="https://vimeo.com/103007490" type="video/webm" /> */}
         </video>
       </section>
 

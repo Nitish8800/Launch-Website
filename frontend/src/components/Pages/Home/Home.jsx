@@ -38,8 +38,8 @@ export const Home = () => {
         },
       });
       const data = await response.json();
-      if ((data.message = "jwt malformed")) {
-      } else {
+      console.log(data);
+      if (data.id) {
         dispatch(set_user_data(data));
       }
     } catch (err) {
@@ -48,7 +48,9 @@ export const Home = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    if (tokenStatus && token) {
+      fetchData();
+    }
   }, [token]);
   return (
     <>

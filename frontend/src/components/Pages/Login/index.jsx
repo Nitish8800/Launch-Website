@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styled from "styled-components";
 import { Login_Form } from "./partials/Login_form";
 
@@ -9,6 +10,12 @@ const Login__container = styled.div`
 `;
 
 export const Login = () => {
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <>
       <Login__container>

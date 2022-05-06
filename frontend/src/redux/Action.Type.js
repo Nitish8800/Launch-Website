@@ -7,3 +7,5 @@ export const SET_TOKEN = "SET_TOKEN";
 export const SET_TOKEN_STATUS = "SET_TOKEN_STATUS";
 
 export const USER_DATA = "USER_DATA";
+
+export const LOGOUT = "LOGOUT";

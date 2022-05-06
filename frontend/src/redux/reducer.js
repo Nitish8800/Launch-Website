@@ -1,4 +1,5 @@
 import {
+  LOGOUT,
   SET_INPUT_LOGIN_PASSWORD,
   SET_INPUT_VALUE,
   SET_TOKEN,
@@ -52,6 +53,14 @@ export const reducer = (state = InitialState, action) => {
       return {
         ...state,
         userdata: action.payload,
+      };
+
+    case LOGOUT:
+      return {
+        ...state,
+        tokenStatus: false,
+        token: null,
+        userdata: null,
       };
 
     default:
