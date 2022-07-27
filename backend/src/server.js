@@ -1,35 +1,30 @@
 const express = require("express");
+const app = express();
+
+const cors = require("cors");
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 
 const connect = require("./configs/db");
 require("dotenv").config();
 
-//controller filelist
-const cors = require("cors");
-
 const userController = require("./controller/User.controller");
-
-const app = express();
+//controller filelist
 
 app.use(express.json());
 
 app.use("/users", userController);
 
-app.use(cors());
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
 
 let port = process.env.PORT;
 
 const start = async () => {
   await connect();
   app.listen(port, () => {
-    console.log("listing to port " + port);
+    console.log("listening to the port " + port);
   });
 };
 
