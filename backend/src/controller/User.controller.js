@@ -4,7 +4,12 @@ const router = express.Router();
 const User = require("../model/User.model");
 
 const crypto = require("crypto");
-require("dotenv").config();
+
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({
+    path: "backend/.env",
+  });
+}
 
 const jwt = require("jsonwebtoken");
 

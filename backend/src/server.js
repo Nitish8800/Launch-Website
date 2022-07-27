@@ -10,7 +10,11 @@ app.use(
 );
 
 const connect = require("./configs/db");
-require("dotenv").config();
+if(process.env.NODE_ENV !== "PRODUCTION"){
+  require("dotenv").config({
+    path:"backend/.env"
+  })
+}
 
 const userController = require("./controller/User.controller");
 //controller filelist
