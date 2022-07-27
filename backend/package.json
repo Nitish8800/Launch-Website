@@ -14,7 +14,10 @@
 "type":"git",
 "url":"git+https://github.com/Nitish8800/Launch-Website.git"
   },
-  "keywords": [],
+  "keywords": [
+    "mernstack",
+    "mern"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
