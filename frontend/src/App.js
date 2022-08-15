@@ -7,8 +7,6 @@ import { Set_token_status } from "./redux/Action";
 
 function App() {
   const { user } = useSelector((state) => state);
-  
-
   return (
     <div className="App">
     
